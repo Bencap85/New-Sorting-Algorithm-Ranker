@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <div id="data-wrapper">
+            <div id="data"></div>
+        </div>
+
+        <div id="popup" style="top: 68%;">
+            <div id="controls-wrapper">
+                <button id="new-array-button" onclick="">New Array</button>
+                <div id="size-slider-wrapper" class="slider-wrapper">
+                    <p>Size:</p>
+                    <input id="size-slider" class="slider" type="range" min="1" max="1000" value="500">
+                </div>
+                <div id="order-wrapper" class="slider-wrapper">
+                    <!-- <p>Randomness:</p> -->
+                    <label for="ordered">
+                        <input name="order-buttons" type="radio" id="ordered-button" class="order-button" >
+                        Ordered
+                    </label>
+                    <label for="reverse-ordered">
+                        <input name="order-buttons"  type="radio" id="reverse-ordered-button" class="order-button" >
+                        Reverse Ordered
+                    </label>
+                    <label for="random">
+                        <input name="order-buttons"  type="radio" id="random-button" class="order-button" >
+                        Random
+                    </label>
+                
+                </div>
+                <button id="sort-button">Sort</button>
+            </div>
+            <div id="results-wrapper">
+                <div id="results"></div>
+            </div>
+        </div>
+        
+
+        <script src="algorithms.js" async defer></script>
+        <script src="index.js" async defer></script>
+    </body>
+</html>

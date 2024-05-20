@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    /* background-color: rgb(193, 193, 193); */
+}
+.slider-wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+}
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: grey;
+    height: 5px;
+    width: 300px;
+    margin-left: 20px;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #19b13a;
+    cursor: pointer;
+  }
+  #data-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background-color: rgb(193, 193, 193);
+  }
+  #data {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+
+    width: 90%;
+
+  }
+  .bar {
+    background-color: rgb(100, 120, 235);
+    margin: 0.5px;
+    width: calc(100%-1px);
+    display: inline-block;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  #popup {
+    display: flex;
+    position: fixed;
+    /* top: 68%; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px 50px 0 0;
+    height: 32%;
+    width: 100%;
+    flex-direction: column;
+    vertical-align: center;
+    
+    
+    z-index: 1;
+  }
+  #popup.expanded {
+    height: 60%;
+  }
+  #controls-wrapper {
+    display: flex;
+    align-content: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    /* clear: both; */
+  }
+  button {
+    width: 120px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 16px;
+    border: none;
+    background-color: green;
+  }
+  #order-wrapper {
+    display: block;
+    width: 30%;
+    
+  }
+  label {
+    display: block;
+    width: 100%;
+    margin-left: 25%;
+    /* float: left; */
+    
+  }
+  .order-button {
+    display: inline; 
+    
+  }
+  .results-wrapper {
+    display: block;
+    
+  }
+  .result {
+    /* background-color: rgb(153, 145, 145); */
+    border-radius: 20px;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 20px;
+    
+  }
+  
